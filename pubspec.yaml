@@ -1,0 +1,69 @@
+name: task_manager
+description: Personal cross-platform task manager (Android + Windows, iOS-ready).
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.6.0
+  flutter: ^3.27.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # state management + DI
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # navigation
+  go_router: ^14.6.2
+
+  # local storage (drift / SQLite)
+  drift: ^2.22.0
+  drift_flutter: ^0.2.4
+  sqlite3_flutter_libs: ^0.5.27
+  path_provider: ^2.1.5
+  path: ^1.9.0
+
+  # backend
+  supabase_flutter: ^2.8.0
+
+  # recurrence (RFC 5545)
+  rrule: ^0.2.16
+
+  # calendar UI
+  table_calendar: ^3.1.3
+
+  # local notifications (cross-platform, no push server)
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+
+  # utilities
+  flutter_dotenv: ^5.2.1
+  uuid: ^4.5.1
+  intl: ^0.20.1
+  collection: ^1.19.0
+  shared_preferences: ^2.3.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # codegen
+  build_runner: ^2.4.13
+  drift_dev: ^2.22.0
+  riverpod_generator: ^2.6.3
+
+  # lint
+  flutter_lints: ^5.0.0
+  custom_lint: ^0.7.0
+  riverpod_lint: ^2.6.3
+
+  # testing
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
