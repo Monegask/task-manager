@@ -39,6 +39,9 @@ dependencies:
   flutter_local_notifications: ^18.0.1
   timezone: ^0.10.0
 
+  # typography
+  google_fonts: ^6.2.1
+
   # utilities
   flutter_dotenv: ^5.2.1
   uuid: ^4.5.1
